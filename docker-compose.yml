@@ -1,0 +1,31 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: ims_mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: your_password_here
+      MYSQL_DATABASE: your_database
+      MYSQL_USER: your_user
+      MYSQL_PASSWORD: your_password
+    ports:
+      - "3308:3306"   # Changed host port to 3308
+    volumes:
+      - db_data:/var/lib/mysql
+
+  backend:
+    build: ./backend
+    container_name: ims_backend
+    restart: always
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_USER: your_user
+      DB_PASSWORD: your_password
+      DB_NAME: your_database
+    ports:
+      - "8080:8080"
+
+volumes:
+  db_data:
