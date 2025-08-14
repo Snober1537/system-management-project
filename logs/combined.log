@@ -1,0 +1,8 @@
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-14T09:48:43.648Z"}
+{"level":"info","message":"Health check endpoint hit","timestamp":"2025-08-14T09:49:29.930Z"}
+{"level":"info","message":"Health check endpoint hit","timestamp":"2025-08-14T09:49:33.031Z"}
+{"level":"info","message":"Health check endpoint hit","timestamp":"2025-08-14T09:49:33.145Z"}
+{"level":"info","message":"Health check endpoint hit","timestamp":"2025-08-14T09:49:34.803Z"}
+{"level":"info","message":"Testing health check endpoint...","timestamp":"2025-08-14T10:39:11.205Z"}
+{"level":"info","message":"Health check endpoint hit","timestamp":"2025-08-14T10:39:11.739Z"}
+{"level":"info","message":"Testing health check endpoint...","timestamp":"2025-08-14T11:02:59.011Z"}
